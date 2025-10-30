@@ -72,15 +72,15 @@ Failed: 0 (0.00%)
 
 ```
 [55/100] Sending 0.001 CELO...
-  → eth_getTransactionCount ["0x6AD01Ac6841b67f27DC1A039FefBF5804003d6a4","pending"]
-    ← 0x14c
-  → eth_sendRawTransaction [...]
-    ← 0x8a16fededdfc0bb73f31ee2934c72af6f08f58b821a70528c23ded850424017b
+  [RPC] eth_getTransactionCount ["0x6AD01Ac6841b67f27DC1A039FefBF5804003d6a4","pending"]
+        → 0x14c
+  [RPC] eth_sendRawTransaction [...]
+        → 0x8a16fededdfc0bb73f31ee2934c72af6f08f58b821a70528c23ded850424017b
 [55/100] Waiting for tx: 0x8a16fededdfc0bb73f31ee2934c72af6f08f58b821a70528c23ded850424017b
-  → eth_getTransactionByHash [...]
-    ← blockNumber=0x2fa3fe6   ← Node A says tx is in block 0x2fa3fe6
-  → eth_getBlockByNumber ["0x2fa3fe6",true]
-    ← ERROR -32019: block is out of range   ← Node B hasn't seen 0x2fa3fe6 yet
+  [RPC] eth_getTransactionByHash [...]
+        → blockNumber=0x2fa3fe6  ← Node A says tx is in block 0x2fa3fe6
+  [RPC] eth_getBlockByNumber ["0x2fa3fe6",true]
+        → ERROR -32019: block is out of range  ← Node B hasn't seen 0x2fa3fe6 yet
 [55/100] ✗ Failed: BLOCK OUT OF RANGE error
 ```
 
