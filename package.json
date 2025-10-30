@@ -1,0 +1,24 @@
+{
+  "name": "celo-forno-block-out-range",
+  "version": "1.0.0",
+  "description": "Reproduction script for Forno 'block is out of range' issue",
+  "main": "send.ts",
+  "scripts": {
+    "send": "tsx send.ts"
+  },
+  "keywords": [
+    "celo",
+    "forno",
+    "viem",
+    "reproduction"
+  ],
+  "author": "Jean Regisser",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.37.9"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
